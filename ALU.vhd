@@ -31,7 +31,7 @@ begin
 				when "000101" => --AND not
 					DataOut_Result <= DataIn_crs1 and not DataIn_crs2;
 				when "000111" => --XOR not
-					DataOut_Result <= DataIn_crs1 xnor not DataIn_crs2;
+					DataOut_Result <= DataIn_crs1 xnor DataIn_crs2;
 				when others => -- Nop para el resto de casos
 					DataOut_Result <= (others=>'0');
 			end case;
