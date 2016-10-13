@@ -17,7 +17,7 @@ begin
 				case(op3) is  --Un case para cada operacion con el op3
 						when "000000" =>			--La CU toma la suma(Add)
 								ALUOP <= op3;
-						when "010000" =>        --La CU toma la resta(sub)
+						when "000100" =>        --La CU toma la resta(sub)
 								ALUOP <= op3;
 						when "000010" => 			--La CU toma el Or lógico
 								ALUOP <= op3;
