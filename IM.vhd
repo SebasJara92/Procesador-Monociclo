@@ -34,7 +34,7 @@ architecture Behavioral of IM is   --Memoria de instrucciones
 	end function;
 
 		
-	signal instructionsIn : rom_type := InitRomFromFile("prueba.txt");  --Señal que saca las instrucciones del archivo
+	signal instructionsIn : rom_type := InitRomFromFile("prueba1.txt");  --Señal que saca las instrucciones del archivo
 
 begin
 	process(rst,DataIn,instructionsIn)--clk) --Process sencible al reset, a la direccion de entrada y a las instrucciones que entran del archivo
