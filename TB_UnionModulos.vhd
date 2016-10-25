@@ -49,10 +49,9 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      wait for 20 ns;
+      rst <= '1';
+		wait for 100 ns;
 			rst <= '0';
-		wait for 20 ns;
-			rst <= '1';
 		wait; 
 
     
