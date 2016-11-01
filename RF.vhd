@@ -3,9 +3,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity RF is
-    Port ( DataIn_rs1 : in  STD_LOGIC_VECTOR(4 downto 0);  --registro fuente 1
-           DataIn_rs2 : in  STD_LOGIC_VECTOR(4 downto 0); --registro fuente 2
-           DataIn_rd : in  STD_LOGIC_VECTOR(4 downto 0);  --registro destino
+    Port ( DataIn_rs1 : in  STD_LOGIC_VECTOR(5 downto 0);  --registro fuente 1
+           DataIn_rs2 : in  STD_LOGIC_VECTOR(5 downto 0); --registro fuente 2
+           DataIn_rd : in  STD_LOGIC_VECTOR(5 downto 0);  --registro destino
            DataWrite : in  STD_LOGIC_VECTOR(31 downto 0); --dato a escribir
            rst : in  STD_LOGIC;
            DataOut_crs1 : out  STD_LOGIC_VECTOR(31 downto 0); --dato con el contenido de resgristo 1
